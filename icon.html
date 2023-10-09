@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+        
+.navsection {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #cbff0f 20%);
+
+}
+
+.logo {
+    width: 40%;
+    color: #fff;
+    background-image: linear-gradient(#000000 40%, hwb(257 15% 82%) 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: edharudhar 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes edharudhar {
+    from {
+        padding-left: 50px;
+    }
+
+    to {
+        padding-right: 50px;
+    }
+}
+
+nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
+    font-size: 17px;
+    position: relative;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+/* Define CSS styles for the card */
+/* General styling for the page */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #3498db;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+h1 {
+margin: 0;
+}
+
+/* Styling for service cards */
+.service-card {
+width: 800px;
+height: 500px;
+background-color: #fff;
+border: 1px solid #e0e0e0;
+margin: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+position: relative;
+display: inline-block;
+gap: 30px;
+align-items: center;
+
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+padding: 20px;
+text-align: center;
+}
+
+.card-content h2 {
+margin: 10px 0;
+font-size: 24px;
+}
+
+.card-content p {
+margin: 0;
+}
+
+.learn-more {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #3498db;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+.learn-more:hover {
+background-color: #2980b9;
+}
+
+.icon {
+margin-left: 8px;
+}
+img{
+width: 40px;
+background-color: azure;
+border-radius: 60px;
+}
+
+</style>
+<body>
+    
+    
+    <section class="navsection">
+        <div class="logo">
+            <h1>Babu dahri  </h1>
+        </div>
+        <nav>
+            <a href="home.html">home</a>
+            <a href="sarwas.html">service</a>
+            <a href="galler.html">gallery</a>
+            <a href="about.html" class="btn1">about</a>
+            <a href="contact.html" class="btn2">contact</a>
+        </nav>
+    </section>
+
+    <!-- Stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+<center>
+    <section class="service-card">
+        <div class="card-content">
+            <h2>Web Design</h2>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAtFBMVEX///8hFgAiFgASAAAfFwAAAAD9//8kGRROSUV8eXYhFwAYDAAhFAB+eXP49/NVUUny8OwlGw4fEQDOz8sMAACmoZwjFgQeFAD//f8dDwAlGQUgEgD//folGxL//vry8+4qIxdYUEyjn57c19UUBwDKx8InHQSGhH6EfnMtIRRYVUwaEACPjItHQj5+end1cm07Miu/vbc7ODOwr60wKCDl4t3p6eqhlpBqX1i9vrWPi4EiFhNWI8RiAAAESklEQVR4nO2d23LbNhRFAZBgbJC6wwQFXVrVcpRYTmRXF6fu//9XQSZtHhrHrIRTQeRessczGg2ENfuQIEAPwRgAAAAAAAAAAAAAAAAAAAAAAADwf5NMWZEk7m/IsMK9KCic+XxO0rQPKumCRp0lv9z0fh28C5fFb11WlqZvXMWPYpkOM8EDZZil0owYgXvCbnXKRZ6fW/E1cmuUHetb/+os6V4tDbdZqO6Kmzg2Nup1CeTvpOKZUnEWKPy9sWZo5R2B+0pyIUyso0DRWuSWC70icO/onFtjPnRC5YMyRoioQ+Ee8ZhPPhK07IvBMBdC07kPCFr2RenOidwV3IOF0h01Hy7IHbn7pd3uqPlwQe7I3S/tdkfNhwtyR+5+Qe5tdUfu4QJ31LxfkHtb3duce5vdUfPhgtyRu1/a7Y6aDxfkjtz9gtzb6o7cwwXuqHm/IPe2urc59za7o+bDBbkjd7+02x01Hy7IHbn7pd3uqPlwQe7I3S/Iva3uyD1c4I6a9wtyb6t7m3NvsztqPlyQO3L3S7vdUfPhgtyRu19Cd0/YYELpHg8/TruhMqd1N3Z93wuURc9wUnel0lAZLxUXhO6K8+zcD6J9Ddc7IziN+2aZ5Vwp91P9/osfvlmf+m3+6M1vHXO5RxsKd21dTQVOZkme0bqR63Mf0nWQFLk/fLq6BD49+FcneLT55XBz/fk6fDqbGwL3jQz2Mdzf0ZrkeO9oe+6z+NtwRTS+Dydx4Jj3XF8TuFfzOH/kuTJxzo3PNgmv57lXd2PteOl5/wrS+bs/jDXR4/1jNPEpfyG5W6M/H+b9jvbY5qXkno17XZYU3avUY6MX4m71ihXThK18Bn8hNe86OS2vlDeX4e41d27WI9fqaKA8tknlvomEV3c+nj0/Pc/WPpukcl9J67Ob7ogfSqkzn7G7CyYrKfbW2UrjtZ8kCCOfCNz7v/st+RKluPHb4PqxT+DOnuTEaz8dxvhV5zSxu+Fo6w5PkR0/wTSxMlb8vbL6bcFX/LPsWnVeGZEf9xWu7UkkKVYuqt0Y952ZDJndas8Y2YaW0/4JdN2LlGm5qjilMU+Sk3bhPIxGd6Ofc3c46RsoNsr83nRRHL9363ONsn1mx+5AW/WQaIfU0yiPwi/LclvH13Hnu+gLO622AqSKZTd+czQf75p3I6B036flgP5zd5HuG5n7H9KN3m/kLjTJtcmZcac6rd6cEAhNcDvt7CRsUWd1annfuAO+cEayhjoXsnHuLvdbWWcKnMtbwguUc7Gt5S7ktoHBP9RalBTypXRvkr6bCdQ61XExXhQNGuC/Tqy6aa2bT8qMKTYxPxf7m5IXLWq5W/1Sff5w7m77oFhUE7Ra6tU/Lurq8/fTBhzzh12arS2vlXqFKHeyT3f9Briz7W48+/Pdf2BW0pih7ogzd9GIgS5J5kcswzTDHQAAAAAAAAAAAAAAAAAAAAAAQEv4Cz7q1uXewWSWAAAAAElFTkSuQmCC" alt=""width="30px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget mauris eget sem ullamcorper.
+              icta animi delectus ab iusto iure? Delectus, dolore dolorem vero saepe accusamus neque quam explicabo magni autem mollitia nulla.
+            </p>
+            <a href="icon.html" class="learn-more">Learn More <span class="icon">▶</span></a>
+        </div>
+    </section>
+</center>
+</body>
+</html>

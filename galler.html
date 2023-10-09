@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the gallery container */
+        .gallery {
+            max-width: 800px;
+            /* Adjust to your desired width */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style the list */
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Style each list item */
+        li {
+            width: calc(33.33% - 20px);
+            /* Adjust for 3 columns with spacing */
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Style the images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style the image captions */
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .navsection {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-image: linear-gradient(to top, #fff 80%, #cbff0f 20%);
+
+        }
+
+        .logo {
+            width: 40%;
+            color: #fff;
+            background-image: linear-gradient(#000000 40%, hwb(257 15% 82%) 60%);
+            padding-left: 100px;
+            box-sizing: border-box;
+        }
+
+        .logo h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            animation: edharudhar 2s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes edharudhar {
+            from {
+                padding-left: 50px;
+            }
+
+            to {
+                padding-right: 50px;
+            }
+        }
+
+        nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #000;
+            font-size: 17px;
+            position: relative;
+        }
+
+        nav a:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            border-bottom: 2px solid #4458dc;
+            transition: all 0.4s linear;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+        .p1{
+            margin: 100px 100px;
+            font-size: 19px;
+        }
+        .img1{
+            width:400px;
+            height: 200px;
+            margin-left: 100px;
+        }
+        .img3{
+            width: 600px;
+            height: 200px;
+            margin-left: 0px;
+
+        }
+        .img4{
+            width: 600px;
+            height: 200px;
+            margin-left: 100px
+        }
+        .img5{
+            width: 400px;
+            height: 200px;
+            margin-left: 1px;
+
+        }
+        
+        .b1{
+            width:600px;
+            height: 200px;
+            
+        }
+        .b3{
+            width:300px;
+            height: 200px;
+            
+        
+
+        }
+        .b4{
+            width:400px;
+            height: 200px;
+            
+            
+        }
+        .b5{
+            width:500px;
+            height: 200px;
+            
+        
+
+        }
+        .p3{
+            margin: 100px 100px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navsection">
+        <div class="logo">
+            <marquee>
+                <h1>Babu dahri</h1>
+            </marquee>
+        </div>
+        <nav>
+            <a href="home.html">home</a>
+            <a href="sarwas.html">service</a>
+            <a href="galler.html">gallery</a>
+            <a href="about.html" class="btn1">about</a>
+            <a href="contact.html" class="btn2">contact</a>
+        </nav>
+    </section>
+    <div class="b">
+        <img src="c:\Users\KKT\Downloads\wp2019283.webp" alt="" width="1900px">
+    </div>
+    <div class="p1">
+        <blockquote><h3>WE ARE LIFELONG LEARNERS</h1>
+        <p> <q>
+            <i>
+            At 10Pearls, learning never stops. Whether it’s  a casual conversation, 
+            of our guest speaker sessions conducted by acclaime d local and internati
+            into everything we do. Plus, every learning opportu nity is open to all—f
+            with us for 10 years. If you feel a program will be nefit you, you are mo
+            , 
+            of our guest speaker sessions conducted by acclaime d local and internati
+            into everything we do. Plus, every learning opportu nity is open to all—f
+            with us for 10 years. If you feel a program will be nefit you, you are mo
+            </i>
+        </q>
+        </p>
+    </blockquote>
+    </div>
+    <div class="img">
+        <img src="c:\Users\KKT\Downloads\5.webp" alt=""class="img1">
+        <img src="c:\Users\KKT\Downloads\1.webp" alt=""class="img3">
+        <img src="c:\Users\KKT\Downloads\1.webp" alt=""class="img4">
+        <img src="c:\Users\KKT\Downloads\group1.jpeg" alt=""class="img5">
+    </div>
+     <div class="p3">
+        <blockquote><h3>WE ARE LIFELONG LEARNERS</h1>
+        <p> <q>
+            <i>
+            At 10Pearls, learning never stops. Whether it’s  a casual conversation, 
+            of our guest speaker sessions conducted by acclaime d local and internati
+            into everything we do. Plus, every learning opportu nity is open to all—f
+            with us for 10 years. If you feel a program will be nefit you, you are mo
+            , 
+            of our guest speaker sessions conducted by acclaime d local and internati
+            into everything we do. Plus, every learning opportu nity is open to all—f
+            with us for 10 years. If you feel a program will be nefit you, you are mo
+            </i>   
+        </q>
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="img">
+            <img src="c:\Users\KKT\Downloads\5.webp" alt=""class="b1">
+            <img src="c:\Users\KKT\Downloads\3.webp" alt=""class="b3">
+            <img src="c:\Users\KKT\Downloads\1.webp" alt=""class="b4">
+            <img src="c:\Users\KKT\Downloads\group1.jpeg" alt=""class="b5">
+        </div>
+
+</body>
+
+</html>
